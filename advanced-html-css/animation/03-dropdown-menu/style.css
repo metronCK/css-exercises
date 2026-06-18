@@ -27,9 +27,11 @@ ul.dropdown-menu li:hover {
 
 .visible {
   display: block;
+  animation: expand 500ms ease-in-out;
+  transform-origin: top;
 }
 
-@keyframes dropdown-menu {
+@keyframes expand {
   0% {
     opacity: 0;
     transform: translateY(-2000px);
